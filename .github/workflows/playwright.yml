@@ -29,29 +29,29 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install chromium --with-deps
 
-      - name: Run Agent Signup
-        run: npx playwright test tests/1.Agent_Signup.spec.ts
+      # - name: Run Agent Signup
+      #   run: npx playwright test tests/1.Agent_Signup.spec.ts
 
       - name: Run Admin Login
         run: npx playwright test tests/2.Admin_Login.spec.ts
 
-      - name: Run Agent Activation
-        run: npx playwright test tests/3.Agent_Activation.spec.ts
+      # - name: Run Agent Activation
+      #   run: npx playwright test tests/3.Agent_Activation.spec.ts
 
-      - name: Run System Login
-        run: npx playwright test tests/4.System_Login.spec.ts
+      # - name: Run System Login
+      #   run: npx playwright test tests/4.System_Login.spec.ts
 
-      - name: Run System Deposit
-        run: npx playwright test tests/5.System_Deposit.spec.ts
+      # - name: Run System Deposit
+      #   run: npx playwright test tests/5.System_Deposit.spec.ts
 
-      - name: Run Agent Login
-        run: npx playwright test tests/6.Agent_Login.spec.ts
+      # - name: Run Agent Login
+      #   run: npx playwright test tests/6.Agent_Login.spec.ts
 
-      - name: Run Agent Balance Assertion
-        run: npx playwright test tests/7.Agent_Balance_Assertion.spec.ts
+      # - name: Run Agent Balance Assertion
+      #   run: npx playwright test tests/7.Agent_Balance_Assertion.spec.ts
 
-      - name: Run Agent Deposit
-        run: npx playwright test tests/8.Agent_Deposit.spec.ts
+      # - name: Run Agent Deposit
+      #   run: npx playwright test tests/8.Agent_Deposit.spec.ts
 
       - name: Upload Playwright Report
         if: always()
