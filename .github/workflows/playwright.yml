@@ -38,8 +38,8 @@ jobs:
       # - name: Run Agent Activation
       #   run: npx playwright test tests/3.Agent_Activation.spec.ts
 
-      # - name: Run System Login
-      #   run: npx playwright test tests/4.System_Login.spec.ts
+      - name: Run System Login
+        run: npx playwright test tests/4.System_Login.spec.ts
 
       # - name: Run System Deposit
       #   run: npx playwright test tests/5.System_Deposit.spec.ts
