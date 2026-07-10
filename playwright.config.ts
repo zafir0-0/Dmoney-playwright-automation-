@@ -33,6 +33,11 @@ export default defineConfig({
     trace: 'on-first-retry',
     storageState: existsSync('auth.json') ? 'auth.json' : undefined,
     headless: true,
+        // Capture screenshot only when test fails
+    screenshot: 'only-on-failure',
+
+    // Record video only when test retries for the first time
+    video: 'on-first-retry',
   },
 
   /* Configure projects for major browsers */
