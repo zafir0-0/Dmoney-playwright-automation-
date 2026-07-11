@@ -45,24 +45,35 @@ The automated test performs the following steps:
 ```
 .
 ├── pages/
-│   ├── LoginPage.ts
-│   ├── SignupPage.ts
-│   ├── UserPage.ts
-│   ├── DepositPage.ts
-│   └── SelfStatementPage.ts
+│   ├── loginPage.ts
+│   ├── signupPage.ts
+│   ├── userPage.ts
+│   ├── depositPage.ts
+│   └── selfStatement.ts
 │
 ├── tests/
-│   ├── agentSignup.spec.ts
-│   ├── adminLogin.spec.ts
-│   ├── agentActivation.spec.ts
-│   ├── systemDeposit.spec.ts
-│   ├── agentBalanceAssertion.spec.ts
-│   └── agentDeposit.spec.ts
+│   ├── Agent_Signup.spec.ts
+│   ├── Admin_Login.spec.ts
+│   ├── Agent_Activation.spec.ts
+│   ├── System_Login.spec.ts
+│   ├── System_Deposit.spec.ts
+│   ├── Agent_Login.spec.ts
+│   ├── Agent_Balance_Assertion.spec.ts
+│   └── Agent_Deposit.spec.ts
 │
-├── test-data.json
+├── utils/
+│   └── test-data.json
+│
+├── .github/
+│   └── workflows/
+│       └── playwright.yml
+│
 ├── auth.json
 ├── playwright.config.ts
 ├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── .env
 ├── .gitignore
 └── README.md
 ```
